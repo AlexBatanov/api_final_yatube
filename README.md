@@ -1,7 +1,6 @@
 ![Изображение](https://yastatic.net/q/logoaas/v2/Яндекс.svg?circle=white&color=fff&first=black) ![Изображение](https://yastatic.net/q/logoaas/v2/Практикум.svg?color=fff)
 
 ## API - сервис Yatube
-***
 
 Полноценный Api для блогерской платформы, включает в себя следующий функционал:
 * регистрация пользователя
@@ -62,7 +61,7 @@ http://127.0.0.1:8000/redoc/
 ### Примеры запросов:
 
 
-все посты:
+#### все посты:
 
 ```
 GET http://127.0.0.1:8000/api/v1/posts/
@@ -87,7 +86,7 @@ GET http://127.0.0.1:8000/api/v1/posts/
 ]
 ```
 
-создание поста:
+#### создание поста:
 
 ```
 POST http://127.0.0.1:8000/api/v1/posts/
@@ -101,7 +100,7 @@ POST http://127.0.0.1:8000/api/v1/posts/
 }
 ```
 
-создание комментария:
+#### создание комментария:
 
 ```
 POST http://127.0.0.1:8000/api/v1/posts/{post_id}/comments/
@@ -113,7 +112,7 @@ POST http://127.0.0.1:8000/api/v1/posts/{post_id}/comments/
 }
 ```
 
-изменение комментария:
+#### изменение комментария:
 
 ```
 PUTCH http://127.0.0.1:8000/api/v1/posts/{post_id}/comments/{id}/
