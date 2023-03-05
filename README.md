@@ -1,4 +1,4 @@
-![Изображение](https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Markdown-mark.svg/1920px-Markdown-mark.svg.png "Логотип Markdown")
+![Изображение](https://yastatic.net/q/logoaas/v2/Практикум.svg?color=fff)
 
 ## API - сервис Yatube
 
