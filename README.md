@@ -1,8 +1,7 @@
 ![Изображение](https://yastatic.net/q/logoaas/v2/Яндекс.svg?circle=white&color=fff&first=black) ![Изображение](https://yastatic.net/q/logoaas/v2/Практикум.svg?color=fff)
 
 ## API - сервис Yatube
-
-### О проекте:
+***
 
 Полноценный Api для блогерской платформы, включает в себя следующий функционал:
 * регистрация пользователя
@@ -59,7 +58,7 @@ python3 manage.py runserver
 ```
 http://127.0.0.1:8000/redoc/
 ```
-
+***
 ### Примеры запросов:
 
 
