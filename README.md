@@ -1,4 +1,4 @@
-![Изображение](https://yastatic.net/q/logoaas/v2/Яндекс.svg?circle=white&color=fff&first=black, https://yastatic.net/q/logoaas/v2/Практикум.svg?color=fff)
+![Изображение](https://yastatic.net/q/logoaas/v2/Яндекс.svg?circle=white&color=fff&first=black) ![Изображение](https://yastatic.net/q/logoaas/v2/Практикум.svg?color=fff)
 
 ## API - сервис Yatube
 
