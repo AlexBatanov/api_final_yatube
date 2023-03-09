@@ -2,10 +2,11 @@ from rest_framework import viewsets
 from django.shortcuts import get_object_or_404
 from rest_framework import filters
 
-from posts.models import Group, Post, Follow
+from posts.models import Group, Post
 from .serializers import (CommentSerializer, GroupSerializer,
                           PostSerializer, FollowSerializer)
 from .permissions import IsOwnerOrReadOnly
+from .mixins import ListCreateViewSet
 
 
 class PostViewSet(viewsets.ModelViewSet):
@@ -33,18 +34,17 @@ class CommentViewSet(viewsets.ModelViewSet):
 
     def get_queryset(self):
         post = get_object_or_404(Post, pk=self.kwargs.get('post_pk'))
-        new_queryset = post.comments.all()
 
-        return new_queryset
+        return post.comments.all()
 
 
-class FollowViewSet(viewsets.ModelViewSet):
+class FollowViewSet(ListCreateViewSet):
     serializer_class = FollowSerializer
     filter_backends = (filters.SearchFilter,)
-    search_fields = ('=following__username',)
+    search_fields = ('following__username', 'user__username')
 
     def perform_create(self, serializer):
         serializer.save(user=self.request.user)
 
     def get_queryset(self):
-        return Follow.objects.filter(user=self.request.user)
+        return self.request.user.follower.all()
