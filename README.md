@@ -10,11 +10,10 @@
 * просмотр комментариев, постов, постов выбранных груп или авторов
 ***
 ## Стек:
-* Python 3.7
-* Django 2.2
-* Django REST Framework
-* SQLite3
-* Simple-JWT
+* Django 3.2
+* DRF 3.12
+* simplejwt 4.7
+* djoser 2.1
 
 ### Как запустить проект:
 
